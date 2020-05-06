@@ -1,0 +1,31 @@
+{
+  "name": "todo_pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx es-dev-server --app-index index.html --node-resolve --watch",
+    "database": "npx json-server --watch data/database.json",
+    "css": "npx tailwindcss build ./styles/tailwind-import.css -o ./styles/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SASS4/todo_pwa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SASS4/todo_pwa/issues"
+  },
+  "homepage": "https://github.com/SASS4/todo_pwa#readme",
+  "dependencies": {
+    "idb": "^5.0.2",
+    "page": "^1.11.6",
+    "standard": "^14.3.3"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.48.1",
+    "json-server": "^0.16.1",
+    "tailwindcss": "^1.4.5"
+  }
+}
